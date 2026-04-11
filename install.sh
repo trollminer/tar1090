@@ -343,6 +343,25 @@ do
 
     "$gpath/git/cachebust.sh" "$gpath/git/cachebust.list" "$TMP"
 
+   # ---------- INSERT CUSTOM BUTTON GROUP ----------
+    if [[ "$instance" == "webroot" ]]; then
+        base_href="/"
+    else
+        base_href="/$instance/"
+    fi
+    sed -i "/<!-- ABOVE_TABS_ANCHOR -->/a\\
+<center>\\
+  <div class=\"btn-group\">\\
+    Navigation:\\
+    <a href=\"${base_href}\"><button>Home</button></a>\\
+    <a href=\"?replay\"><button>Replay</button></a>\\
+    <a href=\"?pTracks\"><button>pTracks</button></a>\\
+    <a href=\"/graphs1090\"><button>Graphs 1090</button></a>\\
+  </div>\\
+</center>" "$TMP/index.html"
+    # ---------- END BUTTON INSERT ----------
+
+
     rm -rf "$html_path"
     mv "$TMP" "$html_path"
 
