@@ -298,7 +298,7 @@ echo --------------
 cd "$ipath"
 
 if [[ -z "$NO_TAR1090" ]] ; then
-    wget -O tar1090-install.sh https://github.com/trollminer/tar1090/blob/with-buttons/install.sh
+    wget -O tar1090-install.sh https://raw.githubusercontent.com/trollminer/tar1090/refs/heads/with-buttons/install.sh
     bash tar1090-install.sh /run/readsb
 fi
 
