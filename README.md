@@ -1,3 +1,14 @@
+This is a slightly modified version to add a few buttons to solve my laziness.
+
+If you do not have readsb installed:<br>
+sudo bash -c "$(wget -O - https://raw.githubusercontent.com/trollminer/tar1090/refs/heads/with-buttons/readsb-install.sh)"  
+
+If you just want the Tar1090 interface with buttons:<br>
+sudo bash -c "$(wget -O - https://raw.githubusercontent.com/trollminer/tar1090/refs/heads/with-buttons/install.sh)"   
+
+
+---
+
 # tar1090
 
 
